@@ -1,0 +1,34 @@
+@media screen and (max-width:1000px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .texts {
+        margin: 40px 0px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .texts h1 {
+        font-size: 2.5em;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:600px){
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+    }
+
+    .subscribe-message {
+        font-size: 0.9em;
+    }
+
+    form input, button {
+        font-size: 0.9em;
+    }
+}

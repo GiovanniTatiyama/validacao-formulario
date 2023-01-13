@@ -1,0 +1,137 @@
+.container {
+    width: 100%;
+    max-width: 75vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* TEXTS */
+
+.texts {
+    width: 100%;
+    max-width: 500px;
+}
+
+.texts h1 {
+    font-size: 3em;
+    margin-bottom: 24px;
+}
+
+/* FORM CONTAINER */
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-message {
+    background-color: var(--blue);
+    color: aliceblue;
+    padding: 24px 8px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subscribe-message strong{
+    margin-right: 5px;
+}
+
+/* FORM */
+
+form {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     background-color:#FFF;
+     padding: 40px 24px;
+     border-radius: 8px;
+     box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.form-group input{
+    height: 60px;
+    border: 2px solid var(--greyishBlue);
+}
+
+.form-group input:hover {
+    border-color: var(--blue);
+}
+
+
+/* error-active classe criada no JS */
+.form-group input.error-active { 
+    border-color: var(--red);
+}
+
+form .infos-error {
+    display: flex;
+    flex-direction: column;
+
+    display: none; /*ativar e desativar com JS mensagens de erro.*/
+}
+
+.infos-error .msg-error {
+    color: var(--red);
+    align-self: flex-end;
+    margin-top: 5px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.infos-error .icon-error {
+    color: var(--red);
+    font-size: 1.4em;
+    position: absolute;
+    align-self: flex-end;
+    top: 20%;
+    right: 5%;
+}
+
+form button {
+    border: 0;
+    height: 60px;
+    background-color: var(--green);
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+form button:hover {
+    background-color: var(--darkGreen);
+    box-shadow: inset 2px 2px 2px 3px rgba(0,0,0,0.1)
+}
+
+.term-message {
+    color: var(--greyishBlue);
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.term-message a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 800;
+}
+
